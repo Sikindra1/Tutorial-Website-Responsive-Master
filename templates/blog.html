@@ -1,0 +1,143 @@
+{% extends "videos.html" %}
+{% block blog %}
+{% load static %}
+<style>
+    #myVideos{
+        display: none;
+    }
+    #list-2{
+        border: none;
+    }
+    #list-3{
+        border-bottom: 3px solid #fff;
+    }
+    #list-2:hover {
+        background: none;
+        /* color: #333; */
+        border: 3px solid #fff;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .search-btn{
+        display: none;
+    }
+    .btn-hidden{
+  display:initial;
+}
+    .btn-hidden a{
+        text-decoration: none; 
+        color: #fff;
+}
+
+</style>
+<!-- main section starts -->
+<div class="row" id="myBlog">
+    <div class="leftcolumn">
+        <div class="card">
+            <h3>Django Cheatsheet</h3>
+            <h5>Do never by heart commands, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/django-logo.png' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Python-based web framework used for rapid development. Django cheatsheet for beginners</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>MySQL Cheatsheet</h3>
+            <h5>Do never by heart commands, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/mysql.png' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>MySql Cheatsheet for all SQL developers. It is defined as a collection of interrelated data stored together to serve multiple applications. MySQL has certain elements that play an important role in querying a database.</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>Python Cheatsheet</h3>
+            <h5>Do never by heart commands, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/python-logo.png' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Python-based web framework used for rapid development. Django cheatsheet for beginners</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>Windows 11 Leaked - What's new and why its exciting?t</h3>
+            <h5>Don't wait see fast, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/win11-logo.jpg' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Windows 11 is an upcoming version of Microsoft Windows. It will be the successor to Windows 10.</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>How to host Django Application using gunicorn & nginx in Production</h3>
+            <h5>Do never by heart commands, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="https://source.unsplash.com/1600x800/?hacking, code" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>In this post, we will see how to use nginx with gunicorn to serve django applications in production.  Django is a very powerful web framework...</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>How to Transform Windows 10 into Ubuntu</h3>
+            <h5>Don't wait see fast, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/ubuntu.png' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Transform Windows 10 to Ubuntu by following the given steps ...</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>Complete Roadmap to master ML - From Zero to Pro!</h3>
+            <h5>Confused? see fast, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="{% static 'images/ai.jpg' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>In this post, I will talk about the complete machine learning roadmap for beginners. This post is going to be a bit different.  I won’t be telling you about the usual stuff and courses but will be...</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>[Solved] gcc.exe error - No such file or directory gcc.exe: fatal error: no input files compilation terminated.t</h3>
+            <h5>Remove error fast, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="https://source.unsplash.com/1600x800/?laptop, hacking" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>This error is pretty much saying that you have the gcc installed and working on your computer but you dont have the file named this.c on this directory. This essentially means that you are in the...</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>Phishing using gophish tool</h3>
+            <h5>Keep it confidential, Dec 7, 2017</h5>
+            <div class="fakeimg"><img src="https://source.unsplash.com/1600x800/?hacking, code" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Phishing is a powerful technique to collect password and username of any social media account</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card about">
+            <h3>About Me</h3>
+            <div class="fakeimgAbout"><img src="{% static 'images/about.jpg' %}" alt="" style="border: none; width: 100%; height: 100%; border-radius: 5px;"></div>
+            <p>Learn python, hacking, web development with me...</p>
+            <button class="btn btn-outline-danger mx-1">Read More</button>
+        </div>
+        <div class="card">
+            <h3>Popular post</h3>
+            <div class="card bg-none text-white p-0 m-0 w-100">
+                <img class="card-img" src="{% static 'images/django-logo.png' %}" alt="Card image" style="border: none; width: 100%; height: 100%; border-radius: 5px;">
+                <div class="card-img-overlay">
+                    <!-- <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p> -->
+                        <button class="btn btn-outline-info w-100">View Post</button>
+                    </div>
+                </div>
+            <div class="card bg-none text-white p-0 m-0 w-100">
+                <img class="card-img" src="{% static 'images/mysql.png' %}" alt="Card image" style="border: none; width: 100%; height: 100%; border-radius: 5px;">
+                <div class="card-img-overlay">
+                    <!-- <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p> -->
+                    <button class="btn btn-outline-info w-100">View Post</button>
+                </div>
+              </div>
+        </div>
+        <div class="card">
+            <h3>Follow me</h3>
+            <div class="d-flex justify-content-around">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main section ends -->
+{% block contact %}
+  
+{% endblock contact %}
+
+{% endblock blog %}

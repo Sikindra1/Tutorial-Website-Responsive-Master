@@ -1,0 +1,160 @@
+{% extends "index.html" %} {% block videos %}
+<!-- {% load static %} -->
+<style>
+  #home,
+  #services {
+    display: none;
+  }
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  #list-1{
+    border: none;
+  }
+  #list-2{
+    border-bottom: 3px solid #fff;
+  }
+  #list-1:hover {
+    background: none;
+    /* color: #333; */
+    border: 3px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-hidden{
+  display: none;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+</style>
+
+<div class="container-fluid main-container" id="myVideos">
+  <div class="row my-2 mx-4">
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/python.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Python Practice Programs With Logic & Explanation In Hindi</h2>
+      <p class="h6">Python Practice Programs With Logic & Explanation In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/java.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Java Tutorials For Beginners</h2>
+      <p class="h6">This series will cover Java from starting to the end. We will learn java from the start to the end</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/c.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">C Language Practice Programs</h2>
+      <p class="h6">This series contains programs for you to practice C Programming and related concepts</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+  </div>
+  <div class="row my-2 mx-4">
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/ds.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Data Structures and Algorithms Course in Hindi</h2>
+      <p class="h6">Data Structures and algorithms course</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/php.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">PHP Tutorials in HindiPython Practice Programs With Logic & Explanation In Hindi</h2>
+      <p class="h6">PHP Tutorials in Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/cpp.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">C++ Tutorials In Hindi</h2>
+      <p class="h6">C++ Tutorials In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+  </div>
+  <div class="row my-2 mx-4">
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/web.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Web Development Tutorials For Beginners In Hindi: HTML, CSS, JavaScript & More</h2>
+      <p class="h6">Web Development Tutorials For Beginners In Hindi: HTML, CSS, JavaScript & More</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/git.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Complete Git Tutorials For Beginners In Hindi</h2>
+      <p class="h6">Complete Git Tutorials For Beginners In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/js.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">JavaScript Tutorials In Hindi</h2>
+      <p class="h6">JavaScript Tutorials In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+  </div>
+  <div class="row my-2 mx-4">
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/django.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Python Django Tutorials In Hindi</h2>
+      <p class="h6">Python Django Tutorials In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/ml.jpg' %}" width="140" height="140" alt="">
+      <h2 class="h2">Machine Learning Tutorials For Beginners Using Python In Hindi</h2>
+      <p class="h6">Machine Learning Tutorials For Beginners Using Python In Hindi</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center my-3">
+      <img src="{% static 'Images/flask.png' %}" width="140" height="140" alt="">
+      <h2 class="h2">Web Development Using Flask and Python</h2>
+      <p class="h6">Web Development Using Flask and Python</p>
+      <button class="btn btn-outline-info">Start Watching >></button>
+    </div>
+  </div>
+</div> 
+{% block searchBtn %}
+<input type="text" name="search" class="search-btn" id="search" placeholder="Search">
+<button class="btn-nav search-btn" type="submit">Search</button> 
+<button class="btn-nav search-btn text-white"><a href="/logout" style="text-decoration: none; color: #fff;">Logout</a></button>
+
+{% endblock searchBtn %}
+{% block blog %}
+  
+{% endblock blog %}
+{% block login %}
+  
+{% endblock login %}
+{% endblock videos %} {% block bootstrap-css %}
+<!-- Bootstrap CSS -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="{% static 'CSS/blogpost.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/contact.css' %}">
+<link rel="stylesheet" media="only screen and (max-width: 1204px)" href="{% static 'CSS/resp.css' %}"/>
+{% endblock bootstrap-css %} {% block bootstrap-js %}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+<script src="https://kit.fontawesome.com/37df777d72.js" crossorigin="anonymous"></script>
+{% endblock bootstrap-js %}
+

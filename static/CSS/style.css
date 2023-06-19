@@ -1,0 +1,297 @@
+/* CSS reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation Section */
+
+.navbar {
+    display: flex;
+    /* background-color: #333; */
+    align-items: center;
+    padding: 5px 15px;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    /* background-color: #333; */
+    align-items: center;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-grow: 3;
+}
+
+.logo a img {
+    background-color: #ddd;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+
+.nav-list li a:hover {
+    background: none;
+    /* color: #333; */
+    border: 3px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-list li a:active {
+    background-color: grey;
+}
+.active{
+    border-bottom: 3px solid #fff;
+}
+#search,
+.form label input,
+.form label textarea {
+    background: none;
+    border: 3px solid #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #ddd;
+    outline: none;
+}
+
+.btn-nav {
+    background: none;
+    color: white;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 21px;
+    padding: 10px 22px;
+}
+
+.rightNav input::placeholder {
+    color: white;
+}
+
+.btn-nav:hover {
+    background-color: rgb(102, 102, 102);
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 10px 22px;
+}
+
+.btn-nav:active {
+    background-color: grey;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(../Images/buildings-1850129_1920.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+/* first section */
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 70%;
+    margin: auto;
+    height: 100%;
+    /* flex-direction: column; */
+    /* border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 0px 20px; */
+}
+
+.firstHalf {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.secondHalf {
+    width: 35%;
+}
+
+.secondHalf img {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 70px;
+}
+
+
+/* section Right */
+
+#sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.thumbnail img {
+    width: 63vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.paras {
+    padding: 0px 50px;
+}
+
+.sectionTag {
+    margin-bottom: 30px;
+}
+
+
+/* About section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7) url(../Images/pexels-abby-chung-1191377.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+
+
+/* Services section */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.service-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 2px solid black; */
+    padding: 20px;
+    margin: 50px 0px;
+    border-radius: 20px;
+    text-align: center;
+    width: 35%;
+}
+
+.card img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+/* footer section */
+
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+/* CSS Utility */
+
+.text-big {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.text-small {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn {
+    background: none;
+    color: white;
+    padding: 8px 17px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(102, 102, 102);
+    cursor: pointer;
+    padding: 10px 22px;
+}
+
+.btn:active {
+    background-color: grey;
+}
+
+.top {
+    border-top: 2px solid black;
+}
+
+.heading {
+    font-size: 4rem;
+    padding-top: 80px;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+
+}

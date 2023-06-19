@@ -1,0 +1,198 @@
+.nav-list {
+    flex-direction: column;
+    width: 65%;
+}
+
+#search {
+    width: 100%;
+}
+
+.navbar {
+    height: 510px;
+    transition: all 0.8s ease-out;
+    position: sticky;
+    top: 0px;
+}
+
+.nav {
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+}
+
+.nav ul li {
+    margin: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+
+.rightNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-nav {
+    margin-top: 10px;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.logo {
+    position: absolute;
+    cursor: pointer;
+    left: 2%;
+    top: 5px;
+}
+
+.line {
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.h-nav-resp {
+    height: 62px;
+}
+
+.v-class-resp {
+    opacity: 0;
+}
+
+
+/* first section */
+
+.firstSection {
+    height: 125vh;
+}
+
+.firstHalf {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.secondHalf {
+    width: 100%;
+}
+
+.secondHalf img {
+    width: 65%;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 3rem;
+}
+
+.box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 20px 45px;
+    height: 74%;
+}
+
+
+/* second section */
+
+#sec {
+    margin-bottom: 40px
+}
+
+.heading-resp {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.left {
+    flex-direction: row;
+}
+
+.section {
+    flex-direction: column-reverse;
+    max-width: 100%;
+    margin: 0px 15px;
+    padding: 0;
+}
+
+.section .paras {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.section .sectionTag {
+    font-size: 2.2rem;
+}
+
+.thumbnail img {
+    width: 35vh;
+}
+
+
+/* About section */
+
+#about {
+    padding-bottom: 40px;
+}
+
+
+/* service section */
+.service-section{
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px 15px;
+    width: 250px;
+}
+
+.card h1 {
+    font-size: 1.7rem;
+}
+
+.card p {
+    font-size: 1.3rem;
+}
+
+
+/* contact section */
+/* 
+.contact-section form label input,
+.contact-section form label textarea {
+    width: 85%;
+}
+
+.contact-section {
+    padding: 0px 20px;
+} */
+
+
+/* Blog Part */
+
+.row{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+.leftcolumn, .rightcolumn{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0px;
+}
+.card{
+    width: 100%;
+    margin: 0px;
+}
